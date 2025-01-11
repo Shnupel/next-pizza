@@ -1,0 +1,68 @@
+@import "../variables";
+
+.header {
+  border-bottom: 1px solid $light-grey;
+  padding: 40px 0;
+
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    img {
+      margin-right: 15px;
+    }
+
+    h1 {
+      color: #181818;
+      font-size: 24px;
+      //letter-spacing: 1%;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    p {
+      color: #7b7b7b
+    }
+  }
+
+  .cart {
+    .button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      line-height: 23px;
+      padding: 12px 25px;
+    }
+    span {
+      font-weight: 600;
+      font-size: 16px
+    }
+    .line {
+      width: 1px;
+      height: 25px;
+      background-color: rgba(255, 255, 255, 0.25);
+      margin-left: 14px;
+      margin-right: 14px
+    }
+
+    .svg {
+      margin-right: 8px;
+    }
+  }
+}

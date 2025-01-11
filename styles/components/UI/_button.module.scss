@@ -1,0 +1,29 @@
+@import "../../_variables.scss";
+
+$button-color-scheme: (
+    background-color: #fe5f1e,
+    text-color: #fff,
+    background-hover: #f24701,
+    text-hover: #fff,
+    background-active: #de4101,
+);
+
+.button {
+  cursor: pointer;
+  border-radius: 32px;
+  text-align: center;
+  border: none;
+  background-color: map-get($button-color-scheme, background-color);
+  color: map-get($button-color-scheme, text-color);
+  transition: background-color 0.3s ease, transform 0.3s ease
+}
+
+.button:hover {
+  background-color: map-get($button-color-scheme, background-hover) !important;
+  color: map-get($button-color-scheme, text-hover) !important;
+}
+
+.button:active {
+  background-color: map-get($button-color-scheme, background-active) !important;
+  transform: translateY(2px);
+}

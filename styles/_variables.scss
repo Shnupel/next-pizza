@@ -1,0 +1,16 @@
+$color-scheme: (
+        dark: (
+                text-color: white,
+                background-color: black,
+        ),
+        light: (
+                text-color: #232323,
+                background-color: #ffdf8c,
+                wrapper-background-color: #fff,
+                main-color: #fe5f1e
+        )
+);
+
+$current-color-scheme: map-get($color-scheme, light);
+
+$light-grey: #f6f6f6
